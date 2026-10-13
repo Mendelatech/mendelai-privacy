@@ -41,6 +41,14 @@
   <p><a href="https://huggingface.co/google/gemma-4-E2B-it" target="_blank" rel="noopener">Gemma 4 model card</a> · <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507" target="_blank" rel="noopener">Qwen3 model card</a> · <a href="https://huggingface.co/litert-community" target="_blank" rel="noopener">litert-community</a></p>
   <p>"Gemma" is a trademark of Google LLC and "Qwen" of Alibaba Cloud. MendelAI is not affiliated with or endorsed by them.</p>
 
+  <h2>MIT License</h2>
+  <table>
+    <tr><th>Library / model</th><th>Purpose in MendelAI</th></tr>
+    <tr><td>whisper.cpp and ggml (Georgi Gerganov and contributors)</td><td>Turns your voice into text on your device. Bundled as native code.</td></tr>
+    <tr><td>OpenAI Whisper small model weights (ggml conversion)</td><td>The speech recognition model itself, downloaded the first time you use the microphone.</td></tr>
+  </table>
+  <p><a href="https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE" target="_blank" rel="noopener">whisper.cpp license</a> · <a href="https://github.com/openai/whisper/blob/main/LICENSE" target="_blank" rel="noopener">Whisper license</a></p>
+
   <h2>Apache License 2.0</h2>
   <p class="intro">The rest of MendelAI's foundation is licensed under the Apache License, Version 2.0.</p>
   <table>
@@ -57,8 +65,8 @@
   <h2>External services (not bundled code, but worth crediting)</h2>
   <table>
     <tr><th>Service</th><th>Used for</th></tr>
-    <tr><td><a href="https://huggingface.co/litert-community" target="_blank" rel="noopener">Hugging Face</a></td><td>Hosting the AI model files that the app downloads. See the <a href="index.html">Privacy Policy</a>.</td></tr>
-    <tr><td>Your phone's text-to-speech and speech recognition engines</td><td>Reading replies aloud and voice input. Provided by their makers (for example, Google) under their own terms.</td></tr>
+    <tr><td><a href="https://huggingface.co/litert-community" target="_blank" rel="noopener">Hugging Face</a></td><td>Hosting the AI and Whisper model files that the app downloads. See the <a href="index.html">Privacy Policy</a>.</td></tr>
+    <tr><td>Your phone's text-to-speech engine (and its speech recognizer, as a fallback)</td><td>Reading replies aloud, and voice input on phones where Whisper can't run. Provided by their makers (for example, Google) under their own terms.</td></tr>
   </table>
 
   <a class="back-link" href="index.html">← Back to the Privacy Policy</a>
